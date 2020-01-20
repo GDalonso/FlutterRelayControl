@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'dart:async';
+import 'dart:convert';
 
 void main() => runApp(MyApp());
 
@@ -73,4 +76,8 @@ class relayTile extends StatelessWidget {
 void apiCall(num relayNumber, String relayState) {
 //  todo: chamar a api
   print(relayNumber.toString() + relayState);
+  String comando = relayNumber.toString() + relayState;
+
+  String url = "http://3.133.113.215:5000/";
+  http.post(url, body: {'comando': comando});
 }
