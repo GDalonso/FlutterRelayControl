@@ -26,9 +26,9 @@ class MyAppBody extends StatelessWidget {
     return Center(
         child: Column(
       children: <Widget>[
-        relayTile("Desk Lamp", "Turn on HUEBRRRRRRRRR", "Turn off", "on", "off",
+        relayTile("Desk Lamp", "Turn on", "Turn off", "on", "off",
             1, Icon(Icons.lightbulb_outline)),
-        relayTile("Relay 2", "Turn on 2", "Turn off", "on", "off", 2,
+        relayTile("Relay 2", "Turn on", "Turn off", "on", "off", 2,
             Icon(Icons.add_a_photo)),
       ],
     ));
